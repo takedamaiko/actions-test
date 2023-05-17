@@ -1,5 +1,11 @@
 name: learn-bithub-actions
-on: [push]
+on:
+    workflow_dispatch:
+        inputs:
+            inputs_base:
+                description: 'Enter the branch name'
+                reqrired: true
+
 jobs:
     check-bats-version:
         runs-on: ubuntu-latest
