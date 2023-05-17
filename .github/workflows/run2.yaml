@@ -1,5 +1,5 @@
 name: learn-bithub-actions
-on:
+on: [push]
 jobs:
     issue_comment:
         types: [created,edited]
