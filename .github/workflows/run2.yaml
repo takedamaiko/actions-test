@@ -1,9 +1,10 @@
 name: learn-bithub-actions
 on:
+jobs:
     issue_comment:
-        types:[created,edited]
+        types: [created,edited]
     workflow_dispatch:
         inputs:
-            branch_name:
-                description:'Enter the branch name'
-                reqrired:true
+            inputs_base:
+                description: 'Enter the branch name'
+                reqrired: true
